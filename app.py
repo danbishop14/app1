@@ -4,12 +4,12 @@ import yfinance as yf
 
 ticker  = yf.Ticker('AAPL')
 
-#Full Data Caching
-@st.cache
-def get_data() -> pd.DataFrame:
-    url = "https://redfin-public-data.s3.us-west-2.amazonaws.com/redfin_market_tracker/zip_code_market_tracker.tsv000.gz"
-    return pd.read_csv(url, compression='gzip', sep='\t')
-df1 = get_data()
+# #Full Data Caching
+# @st.cache
+# def get_data() -> pd.DataFrame:
+#     url = "https://redfin-public-data.s3.us-west-2.amazonaws.com/redfin_market_tracker/zip_code_market_tracker.tsv000.gz"
+#     return pd.read_csv(url, compression='gzip', sep='\t')
+# df1 = get_data()
 
 
 @st.cache
