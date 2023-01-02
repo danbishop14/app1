@@ -12,5 +12,5 @@ def get_df() -> pd.DataFrame:
 df = get_df()
 
 st.title('site')
-st.dataframe(df.tail(4))
+st.dataframe(df.tail(400))
 
